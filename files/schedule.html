@@ -7,17 +7,67 @@
 </head>
 
 <body>
-    <div class="morning">
-        Morning Programs <hr>
+    <div class="container">
+        Morning Programs
+        <hr>
+        <div class="morning">
+            <button onclick="showInfoTeddy()">Teddy Bears</button>
+            <div id="teddy_bears">
+                Teddy Bears
+            </div>
+
+            <button onclick="showInfoCubs()">Bear Cubs</button>
+            <div id="bear_cubs">
+                Bear Cubs
+            </div>
+
+            <button onclick="showInfoBears()">Big Bears</button>
+            <div id="big_bears">
+                Big Bears
+            </div>
+        </div>
     </div>
 
-    <div class="afternoon">
-        Afternoon Programs <hr>
+    <br>
+    <div class="container">
+        Afternoon Programs
+        <hr>
+        <div class="afternoon">
+            <button onclick="showInfoPanda()">Panda Bears</button>
+            <div id="panda_bear">
+                Panda Bears
+            </div>
+
+            <button onclick="showInfoSun()">Sun Bears</button>
+            <div id="sun_bear">
+                Sun Bears
+            </div>
+        </div>
     </div>
 
-    <div class="extended_day">
-        Extended Day Programs <hr>
+    <br>
+    <div class="container">
+        Extended Day Programs
+        <hr>
+        <div class="extended_day">
+            <button onclick="showInfoTracks()">Bear Tracks</button>
+            <div id="bear_tracks">
+                Bear Tracks
+            </div>
+        </div>
     </div>
+
+
+    <script>
+        function showInfoTracks() {
+            var x = document.getElementById("bear_tracks");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
