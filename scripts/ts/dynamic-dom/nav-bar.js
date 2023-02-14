@@ -33,7 +33,6 @@ export function setupNavBar() {
     export function showSelectedNavbarItem() {
     var dropBtns = document.getElementsByClassName("dropbtn");
     console.log("Setting selection for " + selectedElement);
-    
     // get all the dropbtns, set up the appropriate selections
     for (let i = 0; i < dropBtns.length; i++) {
     
@@ -41,9 +40,9 @@ export function setupNavBar() {
       if ( (selectedElement != null) &&  (dropBtns[i].id == selectedElement.id) ) {
          // element.classList.add("my-class");
           // dropBtns[i].classList.add(", selected");
-          dropBtns[i].className = "dropbtn, selected"
+          dropBtns[i].className = "dropbtn, selected";
       } else {
-          dropBtns[i].className = "dropbtn"
+          dropBtns[i].className = "dropbtn";
       }
     }
     }
