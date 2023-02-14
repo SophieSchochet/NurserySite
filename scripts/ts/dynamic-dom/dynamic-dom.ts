@@ -3,7 +3,7 @@ import { Accordion } from './accordion';
 import { doSomething } from './do-something';
 import { HTMLContent, itemsToCache } from './html-imports';
 import { Slideshow } from './slideshow';
-import { showInfoTeddy, showInfoCubs, showInfoBears, showInfoPanda, showInfoSun, showInfoTracks } from './schedule';
+import { showInfoTeddy, showInfoCubs, showInfoBears, showInfoPanda, showInfoSun, showInfoTracks} from './schedule';
 
 // Put all function calls that need to be made on every page load inside the setupAll function body.
 export function PutStudentPageLoadOperationsInsideThisStudentBody() {

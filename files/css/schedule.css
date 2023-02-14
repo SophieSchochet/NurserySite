@@ -1,13 +1,58 @@
+@import url("common.css");
+@import url("side_menu.css");
+
 .container {
-    display: flex;
     margin: 3%;
 }
+
+hr{
+    margin-bottom: 2%;
+    border: 1px solid black;
+}
+
+body h2{
+    margin-bottom: 0%;
+}
+
+.classButton{
+    display: block;
+    color: white;
+    background-color: #a51417;
+    border: none;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    font-size: 20px;
+    padding: 14px 14px;
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+.classButton:hover{
+    cursor: pointer;
+}
+
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: flex;
+    padding: 3px;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
 
 #teddy_bears {
     display: none;
 }
 
 #bear_cubs {
+    display: none;
+}
+
+#big_bears{
     display: none;
 }
 
