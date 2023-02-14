@@ -2,22 +2,33 @@ export function showInfoTeddy() {
     var x = document.getElementById("teddy");
 
     if (x != null) {
-        x.onclick = showInfo;
+        x.addEventListener('click', function(){
+            showInfo();
+        });
     }
 
     function showInfo() {
         var x = document.getElementById("teddy_bears");
+        var arr = document.getElementById("arrowTeddy");
         if (x != null) {
             if (x.style.display === "none") {
                 x.style.display = "block";
+                if(arr != null){
+                    arr.style.transform = "rotate(135deg)";
+                }
             }
-            else {
+            else{
                 x.style.display = "none";
+                if(arr != null){
+                    arr.style.transform = "rotate(-45deg)";
+                }
+                
             }
         }
     }
 
 }
+
 
 export function showInfoCubs() {
     var x = document.getElementById("cubs");
@@ -28,12 +39,20 @@ export function showInfoCubs() {
 
     function showInfo() {
         var x = document.getElementById("bear_cubs");
+        var arr = document.getElementById("arrowCubs");
         if (x != null) {
             if (x.style.display === "none") {
                 x.style.display = "block";
+                if(arr != null){
+                    arr.style.transform = "rotate(135deg)";
+                }
             }
-            else {
+            else{
                 x.style.display = "none";
+                if(arr != null){
+                    arr.style.transform = "rotate(-45deg)";
+                }
+                
             }
         }
     }
@@ -49,12 +68,20 @@ export function showInfoBears() {
 
     function showInfo() {
         var x = document.getElementById("big_bears");
+        var arr = document.getElementById("arrowBig");
         if (x != null) {
             if (x.style.display === "none") {
                 x.style.display = "block";
+                if(arr != null){
+                    arr.style.transform = "rotate(135deg)";
+                }
             }
-            else {
+            else{
                 x.style.display = "none";
+                if(arr != null){
+                    arr.style.transform = "rotate(-45deg)";
+                }
+                
             }
         }
     }
@@ -70,12 +97,20 @@ export function showInfoPanda() {
 
     function showInfo() {
         var x = document.getElementById("panda_bear");
+        var arr = document.getElementById("arrowPanda");
         if (x != null) {
             if (x.style.display === "none") {
                 x.style.display = "block";
+                if(arr != null){
+                    arr.style.transform = "rotate(135deg)";
+                }
             }
-            else {
+            else{
                 x.style.display = "none";
+                if(arr != null){
+                    arr.style.transform = "rotate(-45deg)";
+                }
+                
             }
         }
     }
@@ -91,12 +126,20 @@ export function showInfoSun() {
 
     function showInfo() {
         var x = document.getElementById("sun_bear");
+        var arr = document.getElementById("arrowSun");
         if (x != null) {
             if (x.style.display === "none") {
                 x.style.display = "block";
+                if(arr != null){
+                    arr.style.transform = "rotate(135deg)";
+                }
             }
-            else {
+            else{
                 x.style.display = "none";
+                if(arr != null){
+                    arr.style.transform = "rotate(-45deg)";
+                }
+                
             }
         }
     }
@@ -112,13 +155,20 @@ export function showInfoTracks() {
 
     function showInfo() {
         var x = document.getElementById("bear_tracks");
-        var arr = btn
-        if (x != null && btn != null) {
+        var arr = document.getElementById("arrowTracks");
+        if (x != null) {
             if (x.style.display === "none") {
                 x.style.display = "block";
+                if(arr != null){
+                    arr.style.transform = "rotate(135deg)";
+                }
             }
-            else {
+            else{
                 x.style.display = "none";
+                if(arr != null){
+                    arr.style.transform = "rotate(-45deg)";
+                }
+                
             }
         }
     }
