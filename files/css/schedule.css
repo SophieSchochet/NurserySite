@@ -1,0 +1,73 @@
+@import url("common.css");
+@import url("side_menu.css");
+
+.container {
+    margin: 3%;
+}
+
+hr {
+    margin-bottom: 2%;
+    border: 1px solid black;
+}
+
+body h2 {
+    margin-bottom: 0%;
+}
+
+.classButton {
+    display: block;
+    color: white;
+    background-color: #a51417;
+    border: none;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    font-size: 20px;
+    padding: 14px 14px;
+    text-align: left;
+    margin-bottom: 1%;
+
+    position: relative;
+    text-decoration: none;
+}
+
+.classButton:hover {
+    cursor: pointer;
+}
+
+
+#teddy_bears {
+    display: none;
+}
+
+#bear_cubs {
+    display: none;
+}
+
+#big_bears {
+    display: none;
+}
+
+#panda_bear {
+    display: none;
+}
+
+#sun_bear {
+    display: none;
+}
+
+#bear_tracks {
+    display: none;
+}
+
+.arrow {
+    color: white;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-width: 3px 3px 0 0;
+    transform: rotate(-45deg);
+    margin-left: 1px;
+    margin-right: 2%;
+}
