@@ -9,6 +9,18 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
+.hide p{
+    display:none;
+}
+
+.calendar-entry:hover + .hide p{
+    display:block;
+    color:black;
+    font-size: 20px;
+    margin-block-end: 20px;
+    margin-block-start: 20px;
+    padding: 0px 0px 10px 20px;
+}
 
 .calendar-session header {
     color: rgb(85, 85, 85);
