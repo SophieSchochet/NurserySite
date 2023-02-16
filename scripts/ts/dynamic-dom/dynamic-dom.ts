@@ -5,6 +5,7 @@ import { HTMLContent, itemsToCache } from './html-imports';
 import { Slideshow } from './slideshow';
 import { setupNavBar } from "./nav-bar";
 import { setUpSticky } from './sticky';
+import { showInfo } from './schedule';
 
 // Put all function calls that need to be made on every page load inside the setupAll function body.
 export function PutStudentPageLoadOperationsInsideThisStudentBody() {
@@ -13,6 +14,7 @@ export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     doSomething();
     setUpSticky();
     setupNavBar();
+    showInfo();
 }
 
 export async function setupAll() {

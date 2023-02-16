@@ -35,10 +35,25 @@ body h2 {
     cursor: pointer;
 }
 
-.upArrow{
-    transform: rotate(-45deg);
+.active{
+    display: block !important;
 }
 
+.arrow {
+    color: white;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-width: 3px 3px 0 0;
+    transform: rotate(135deg);
+    margin-left: 1px;
+    margin-right: 2%;
+}
+
+.upArrow{
+    transform: rotate(-45deg) !important;
+}
 
 #teddy_bears {
     display: none;
@@ -62,16 +77,4 @@ body h2 {
 
 #bear_tracks {
     display: none;
-}
-
-.arrow {
-    color: white;
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border: 1px solid white;
-    border-width: 3px 3px 0 0;
-    transform: rotate(135deg);
-    margin-left: 1px;
-    margin-right: 2%;
 }

@@ -1,6 +1,7 @@
 import $ from "jquery";
 
-export function showInfoTeddy() {
+export function showInfo() {
+
     $('#teddy').on('click', function () {
         console.log("TEDDY");
         $("#teddy_bears").toggleClass("active");
