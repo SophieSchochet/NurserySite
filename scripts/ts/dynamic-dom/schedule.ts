@@ -1,176 +1,36 @@
-export function showInfoTeddy() {
-    var x = document.getElementById("teddy");
+import $ from "jquery";
 
-    if (x != null) {
-        x.addEventListener('click', function(){
-            showInfo();
-        });
-    }
+export function showInfo() {
 
-    function showInfo() {
-        var x = document.getElementById("teddy_bears");
-        var arr = document.getElementById("arrowTeddy");
-        if (x != null) {
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                if(arr != null){
-                    arr.style.transform = "rotate(135deg)";
-                }
-            }
-            else{
-                x.style.display = "none";
-                if(arr != null){
-                    arr.style.transform = "rotate(-45deg)";
-                }
-                
-            }
-        }
-    }
+    $('#teddy').on('click', function () {
+        console.log("TEDDY");
+        $("#teddy_bears").toggleClass("active");
+        $("#arrowTeddy").toggleClass("upArrow");
+    })
 
-}
+    $('#cubs').on('click', function(){
+        $("#bear_cubs").toggleClass("active");
+        $("#arrowCubs").toggleClass("upArrow");
+    })
 
+    $('#big').on('click', function(){
+        $("#big_bears").toggleClass("active");
+        $("#arrowBig").toggleClass("upArrow");
+    })
 
-export function showInfoCubs() {
-    var x = document.getElementById("cubs");
+    $('#panda').on('click', function(){
+        $("#panda_bear").toggleClass("active");
+        $("#arrowPanda").toggleClass("upArrow");
+    })
 
-    if (x != null) {
-        x.onclick = showInfo;
-    }
+    $('#sun').on('click', function(){
+        $("#sun_bear").toggleClass("active");
+        $("#arrowSun").toggleClass("upArrow");
+    })
 
-    function showInfo() {
-        var x = document.getElementById("bear_cubs");
-        var arr = document.getElementById("arrowCubs");
-        if (x != null) {
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                if(arr != null){
-                    arr.style.transform = "rotate(135deg)";
-                }
-            }
-            else{
-                x.style.display = "none";
-                if(arr != null){
-                    arr.style.transform = "rotate(-45deg)";
-                }
-                
-            }
-        }
-    }
-
-}
-
-export function showInfoBears() {
-    var x = document.getElementById("big");
-
-    if (x != null) {
-        x.onclick = showInfo;
-    }
-
-    function showInfo() {
-        var x = document.getElementById("big_bears");
-        var arr = document.getElementById("arrowBig");
-        if (x != null) {
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                if(arr != null){
-                    arr.style.transform = "rotate(135deg)";
-                }
-            }
-            else{
-                x.style.display = "none";
-                if(arr != null){
-                    arr.style.transform = "rotate(-45deg)";
-                }
-                
-            }
-        }
-    }
-
-}
-
-export function showInfoPanda() {
-    var x = document.getElementById("panda");
-
-    if (x != null) {
-        x.onclick = showInfo;
-    }
-
-    function showInfo() {
-        var x = document.getElementById("panda_bear");
-        var arr = document.getElementById("arrowPanda");
-        if (x != null) {
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                if(arr != null){
-                    arr.style.transform = "rotate(135deg)";
-                }
-            }
-            else{
-                x.style.display = "none";
-                if(arr != null){
-                    arr.style.transform = "rotate(-45deg)";
-                }
-                
-            }
-        }
-    }
-
-}
-
-export function showInfoSun() {
-    var x = document.getElementById("sun");
-
-    if (x != null) {
-        x.onclick = showInfo;
-    }
-
-    function showInfo() {
-        var x = document.getElementById("sun_bear");
-        var arr = document.getElementById("arrowSun");
-        if (x != null) {
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                if(arr != null){
-                    arr.style.transform = "rotate(135deg)";
-                }
-            }
-            else{
-                x.style.display = "none";
-                if(arr != null){
-                    arr.style.transform = "rotate(-45deg)";
-                }
-                
-            }
-        }
-    }
-
-}
-
-export function showInfoTracks() {
-    var btn = document.getElementById("tracks");
-
-    if (btn != null) {
-        btn.onclick = showInfo;
-    }
-
-    function showInfo() {
-        var x = document.getElementById("bear_tracks");
-        var arr = document.getElementById("arrowTracks");
-        if (x != null) {
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                if(arr != null){
-                    arr.style.transform = "rotate(135deg)";
-                }
-            }
-            else{
-                x.style.display = "none";
-                if(arr != null){
-                    arr.style.transform = "rotate(-45deg)";
-                }
-                
-            }
-        }
-    }
+    $('#tracks').on('click', function(){
+        $("#bear_tracks").toggleClass("active");
+        $("#arrowTracks").toggleClass("upArrow");
+    })
 
 }
