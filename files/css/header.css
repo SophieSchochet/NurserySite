@@ -38,12 +38,11 @@ header {
     line-height: 1.2;
     text-decoration: none;
 }
-
-.site-title:hover {
+/*#.site-title:hover {
     color: #a51417;
     text-decoration: underline;
 }
-
+*/
 
 /* Navbar container */
 
@@ -53,7 +52,16 @@ header {
     font-family: Arial;
 }
 
+/* Added to header when it reaches scroll position*/
+.sticky {
+    position: fixed;
+    top: 5%;
+    width: 100%;
+  }
 
+.sticky + .content{
+padding-top: 150px;
+}
 /* Links inside the navbar */
 
 .navbar a {
@@ -84,6 +92,13 @@ header a {
 
 
 /* Dropdown button */
+
+.selected {
+    border-width: 1px;
+    border-color: white;
+    background-color: #555;
+    }
+    
 
 .dropdown .dropbtn {
     font-size: 16px;
