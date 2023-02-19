@@ -1,8 +1,12 @@
 @import url("common.css");
- @import url("side_menu.css");
- 
- .grid {
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
- grid-gap: 1rem;
- }
+@import url("side_menu.css");
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+body{
+    background-color: white;
+}
